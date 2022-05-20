@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SellBetter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero desktop  -->
+    <section
+      class="hero-desktop d-none d-lg-flex justify-content-center align-items-center"
+    >
+      <div class="hero-section-content">
+        <img src="img/sell_better_logo_hero.svg" alt="" class="img-fluid" />
+      </div>
+      <div class="hero-arrow-wrap">
+        <a href="#big-section"
+          ><img src="img/arrow-down.svg" alt="" class="img-fluid"
+        /></a>
+      </div>
+    </section>
+
+    <!-- Big section -->
+
+    <section class="big-section" id="big-section">
+      <div class="container">
+        <!-- Social Icons -->
+
+        <div class="social-icons-block d-none d-lg-block">
+          <div class="container">
+            <div class="socials-icons">
+              <ul
+                class="d-flex list-unstyled justify-content-end align-items-center"
+              >
+                <li>
+                  <a href="#"><img src="img/linkedin_icon.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/instagram.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/TikTok.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/youtube.svg" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav section -->
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/sell_better_logo.svg" alt="Sell Better" />
+            </a>
+
+            <label class="navbar-toggler" for="slide-menu-right" type="button">
+              <img src="img/menu-icon.svg" alt="" />
+            </label>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+              <ul class="navbar-nav ms-auto align-items-center">
+                <ul id="menu-main" class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="menu-item nav-item">
+                    <a href="events.html" class="nav-link">Events</a>
+                  </li>
+                  <li class="menu-item nav-item">
+                    <a href="courses.html" class="nav-link">Courses</a>
+                  </li>
+                  <li class="menu-item nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#joinModal"
+                      >Join</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Menu Items -->
+        <div class="slide-menu">
+          <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
+          <div class="menu-wrap">
+            <label for="slide-menu-right" class="menu-close"
+              ><img src="img/close_icon.svg" alt=""
+            /></label>
+            <div class="menu-list">
+              <ul class="text-center">
+                <li class=""><a class="" href="index.html">Home</a></li>
+                <li class="">
+                  <a class="" href="events.html">Events</a>
+                </li>
+                <li class="">
+                  <a class="" href="courses.html">Courses</a>
+                </li>
+                <li class="">
+                  <a class="" href="about.html">About</a>
+                </li>
+              </ul>
+              <div class="nav-join text-center w-100">
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#joinModal"
+                  for="slide-menu-right"
+                  class="btn btn-primary"
+                  >Join</a
+                >
+              </div>
+              <div class="social-icons-block">
+                <div class="container">
+                  <div class="socials-icons">
+                    <ul
+                      class="d-flex list-unstyled justify-content-center align-items-center"
+                    >
+                      <li>
+                        <a href="#"
+                          ><img src="img/linkedin_icon.svg" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="img/instagram.svg" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="img/TikTok.svg" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="img/youtube.svg" alt="" /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <label for="slide-menu-right" class="menu-overlay"></label>
+        </div>
+
+        <!-- First section -->
+        <section class="first-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="first-section-text-box">
+                  <h1>
+                    Where sales pros<br />
+                    come to grow.
+                  </h1>
+                  <h3>
+                    Become the highest paid seller in the room <br />
+                    (without selling your soul).
+                  </h3>
+                  <h4>
+                    Join 50,000+ sales pros on the journey to get 1% better
+                    every day.
+                  </h4>
+                </div>
+              </div>
+              <div class="col-lg-5 text-end">
+                <div class="first-section-card d-flex flex-column">
+                  <h3 class="text-center">What’s Inside</h3>
+                  <ul class="list-unstyled mx-auto">
+                    <li>
+                      <div class="d-flex align-items-center">
+                        <div class="check-wrap">
+                          <img src="img/check-circle.svg" alt="" />
+                        </div>
+                        <div class="check-text">Live webinars</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex align-items-center">
+                        <div class="check-wrap">
+                          <img src="img/check-circle.svg" alt="" />
+                        </div>
+                        <div class="check-text">Live AMAs</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex align-items-center">
+                        <div class="check-wrap">
+                          <img src="img/check-circle.svg" alt="" />
+                        </div>
+                        <div class="check-text">Live in-person events</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex align-items-center">
+                        <div class="check-wrap">
+                          <img src="img/check-circle.svg" alt="" />
+                        </div>
+                        <div class="check-text">Growing community</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex align-items-center">
+                        <div class="check-wrap">
+                          <img src="img/check-circle.svg" alt="" />
+                        </div>
+                        <div class="check-text text-start">
+                          Proven strategies + templates
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="d-flex align-items-center">
+                        <div class="check-wrap">
+                          <img src="img/check-circle.svg" alt="" />
+                        </div>
+                        <div class="check-text">And more</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="btn-wrap text-center w-100">
+                    <a href="#" class="btn btn-primary w-100">JOIN FOR FREE </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Logo section -->
+
+        <section class="logo-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <h5 class="text-center">Supported by:</h5>
+                <div
+                  class="logos-block d-flex flex-wrap justify-content-center align-items-center"
+                >
+                  <div class="logo-box">
+                    <img src="img/reprise_logo.png" alt="" />
+                  </div>
+                  <div class="logo-box">
+                    <img src="img/Vidyard_logo.png" alt="" />
+                  </div>
+                  <div class="logo-box">
+                    <img src="img/Proposify.png" alt="" />
+                  </div>
+                  <div class="logo-box">
+                    <img src="img/Salesloft.png" alt="" />
+                  </div>
+                  <div class="logo-box">
+                    <img src="img/Chilipiper.png" alt="" />
+                  </div>
+                  <div class="logo-box">
+                    <img src="img/ZoomInfo.png" alt="" />
+                  </div>
+                  <div class="logo-box">
+                    <img src="img/gong_logo.png" alt="" />
+                  </div>
+                  <div class="logo-box">
+                    <img src="img/logo-salesforce.png" alt="" />
+                  </div>
+                  <div class="logo-box"><img src="img/dooly.png" alt="" /></div>
+                  <div class="logo-box">
+                    <img src="img/demandbase-logo.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Second section -->
+    <section class="second-section">
+      <div class="container">
+        <div class="second-section-box d-block d-lg-flex align-items-center">
+          <div class="second-section-heading second-section-wrap">
+            <h1>
+              Expert<br />
+              Advice
+            </h1>
+          </div>
+          <div class="second-section-text second-section-wrap ps-lg-5">
+            <h3>Your favorite sales voices on speedial.</h3>
+            <p>
+              Get open-door access to top sales trainers and industry experts
+              with monthly AMAs, quarterly interactive challenges, and regular
+              in-person events.
+            </p>
+          </div>
+        </div>
+        <div class="second-section-box d-block d-lg-flex align-items-center">
+          <div class="second-section-heading second-section-wrap">
+            <h1>
+              Event<br />
+              Access
+            </h1>
+          </div>
+          <div class="second-section-text second-section-wrap ps-lg-5">
+            <h3>Learn together, grow together, better together.</h3>
+            <p>
+              Join a diverse and inclusive community of sales pros ready to
+              share ideas, swap stories, challenge conventional wisdom, and
+              deliver a dose of inspiration when you need it most.
+            </p>
+          </div>
+        </div>
+        <div
+          class="second-section-box d-block d-lg-flex align-items-center mb-0"
+        >
+          <div class="second-section-heading second-section-wrap">
+            <h1>
+              Insider<br />
+              Info
+            </h1>
+          </div>
+          <div class="second-section-text second-section-wrap ps-lg-5">
+            <h3>Unlock a roster of actionable content.</h3>
+            <p>
+              Get your front-row ticket to the events and experiences that go
+              beyond tips and tricks and explore what it means to work on your
+              craft. Plus, get access to all past events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+
+    <section id="events">
+      <div class="container">
+        <h1 class="text-center">Upcoming events</h1>
+        <h4 class="text-center">
+          Live in-person and online experiences that capture what's working in
+          sales right now, from practitioners at the top of their game.
+        </h4>
+
+        <div class="events-calendar">
+          <div class="events-calendar-header d-none d-lg-block">
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="events-calendar-date">Date</div>
+              </div>
+              <div class="col-lg-5">
+                <div class="events-calendar-title">Title</div>
+              </div>
+              <div class="col-lg-3">
+                <div class="events-calendar-title">Who</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="events-loop">
+            <div class="event-box">
+              <div class="open-icon acc-icon">
+                <a
+                  class="collapsed"
+                  data-bs-toggle="collapse"
+                  href="#event0"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="event0"
+                >
+                  <img
+                    src="https://joinjbsales.com/wp-content/themes/jbsales-ondemand/img/arrow-down.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="row align-items-start">
+                <div class="col-lg-2 d-flex flex-column date-box">
+                  <div class="event-date d-flex align-items-center">
+                    <div class="event-mob d-block d-lg-none">Date</div>
+                    May 18
+                  </div>
+                  <div class="mt-2 collapse" id="event0">
+                    <div class="event-date-clock">15:00 pm EST</div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-flex flex-column title-box">
+                  <div
+                    class="event-title d-flex align-items-start align-items-lg-center"
+                  >
+                    <div class="event-mob d-block d-lg-none">Title</div>
+                    <span class=""
+                      >How to 3x Response Rates with These Super Simple
+                      Follow-Up Techniques</span
+                    >
+                  </div>
+                  <div class="mt-2 collapse" id="event0">
+                    <div class="event-describe">
+                      Effective follow-up is a core sales skill. But many
+                      sellers struggle to find the sweet spot between too much
+                      and not enough.<br />
+                      <br />
+                      In this webinar, we’ll catch up with senior sales pros to
+                      break down actionable tactics designed to triple your
+                      response rate.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-flex flex-column who-box">
+                  <div
+                    class="event-who d-flex align-items-start align-items-lg-center"
+                  >
+                    <div class="event-mob d-block d-lg-none">Who</div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/01/james-buckley-100x100.jpeg"
+                        alt="James Buckley"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/02/shellyguptacorrea-100x100.jpeg"
+                        alt="Shelly Gupta Correa"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/05/round_headshot_Joseph.png"
+                        alt="Joseph Cua"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-2 collapse" id="event0">
+                    <div class="who-list d-flex flex-column">
+                      <div class="who-name">James Buckley</div>
+
+                      <div class="who-name">Shelly Gupta Correa</div>
+
+                      <div class="who-name">Joseph Cua</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div
+                    class="d-flex justify-content-center justify-content-lg-start align-items-center event-sign-up"
+                  >
+                    <a
+                      href="https://content.jbarrows.com/how-to-3x-response-rates-with-these-super-simple-follow-up-techniques"
+                      class="btn btn-black text-nowrap"
+                      target="_blank"
+                      >Sign Up</a
+                    >
+                  </div>
+                </div>
+                <hr class="divider-events d-block d-lg-none" />
+              </div>
+            </div>
+
+            <div class="event-box">
+              <div class="open-icon acc-icon">
+                <a
+                  class="collapsed"
+                  data-bs-toggle="collapse"
+                  href="#event1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="event1"
+                >
+                  <img
+                    src="https://joinjbsales.com/wp-content/themes/jbsales-ondemand/img/arrow-down.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="row align-items-start">
+                <div class="col-lg-2 d-flex flex-column date-box">
+                  <div class="event-date d-flex align-items-center">
+                    <div class="event-mob d-block d-lg-none">Date</div>
+                    May 19
+                  </div>
+                  <div class="mt-2 collapse" id="event1">
+                    <div class="event-date-clock">10:00 am EST</div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-flex flex-column title-box">
+                  <div
+                    class="event-title d-flex align-items-start align-items-lg-center"
+                  >
+                    <div class="event-mob d-block d-lg-none">Title</div>
+                    <span class=""
+                      >Proven Tactics for AEs to Prepare for the Summer
+                      Slump</span
+                    >
+                  </div>
+                  <div class="mt-2 collapse" id="event1">
+                    <div class="event-describe">
+                      For account executives, the hottest months can often be
+                      the coldest for sales. With the uptick in unanswered calls
+                      and out-of-office emails, it’s easy for morale—and
+                      quota—to slip.<br />
+                      <br />
+                      In this webinar, you’ll learn how to heat up the summer
+                      slump with proven strategies purpose-built to help AEs
+                      turn slow time into closing time.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-flex flex-column who-box">
+                  <div
+                    class="event-who d-flex align-items-start align-items-lg-center"
+                  >
+                    <div class="event-mob d-block d-lg-none">Who</div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/01/james-buckley-100x100.jpeg"
+                        alt="James Buckley"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/05/Tyler-Meckes-100x100.jpeg"
+                        alt="Tyler Meckes"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-2 collapse" id="event1">
+                    <div class="who-list d-flex flex-column">
+                      <div class="who-name">James Buckley</div>
+
+                      <div class="who-name">Tyler Meckes</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div
+                    class="d-flex justify-content-center justify-content-lg-start align-items-center event-sign-up"
+                  >
+                    <a
+                      href="https://content.jbarrows.com/proven-tactics-for-aes-to-prepare-for-the-summer-slump"
+                      class="btn btn-black text-nowrap"
+                      target="_blank"
+                      >Sign Up</a
+                    >
+                  </div>
+                </div>
+                <hr class="divider-events d-block d-lg-none" />
+              </div>
+            </div>
+
+            <div class="event-box">
+              <div class="open-icon acc-icon">
+                <a
+                  class="collapsed"
+                  data-bs-toggle="collapse"
+                  href="#event2"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="event2"
+                >
+                  <img
+                    src="https://joinjbsales.com/wp-content/themes/jbsales-ondemand/img/arrow-down.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="row align-items-start">
+                <div class="col-lg-2 d-flex flex-column date-box">
+                  <div class="event-date d-flex align-items-center">
+                    <div class="event-mob d-block d-lg-none">Date</div>
+                    May 25
+                  </div>
+                  <div class="collapse mt-2" id="event2">
+                    <div class="event-date-clock">13:00 pm EST</div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-flex flex-column title-box">
+                  <div
+                    class="event-title d-flex align-items-start align-items-lg-center"
+                  >
+                    <div class="event-mob d-block d-lg-none">Title</div>
+                    <span class=""
+                      >3 Selling Secrets That Will Catapult Your Close
+                      Rate</span
+                    >
+                  </div>
+                  <div class="collapse mt-2" id="event2">
+                    <div class="event-describe">
+                      The mid- to late-stages of the sales cycle are packed with
+                      unique challenges. Objections. Negotiations. Slipping
+                      enthusiasm. Buyers ghosting. Ugh.<br />
+                      <br />
+                      If sellers don’t leverage every advantage possible to gain
+                      the edge, deals can quickly go bust.<br />
+                      <br />
+                      Well, lean in. Because on this webinar we’re revealing not
+                      one, not two, but three selling secrets that will turn you
+                      into a master closer.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-flex flex-column who-box">
+                  <div
+                    class="event-who d-flex align-items-start align-items-lg-center"
+                  >
+                    <div class="event-mob d-block d-lg-none">Who</div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/01/Morgan-Ingram.png"
+                        alt="Morgan J. Ingram"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/01/james-buckley-100x100.jpeg"
+                        alt="James Buckley"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/02/willaitken-100x100.jpeg"
+                        alt="Will Aitken"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/05/round_headshot_Nadia.webp"
+                        alt="Nadia Milani"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/05/round_headshot_Russell.webp"
+                        alt="Russell Banzon"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="collapse mt-2" id="event2">
+                    <div class="who-list d-flex flex-column">
+                      <div class="who-name">Morgan J. Ingram</div>
+
+                      <div class="who-name">James Buckley</div>
+
+                      <div class="who-name">Will Aitken</div>
+
+                      <div class="who-name">Nadia Milani</div>
+
+                      <div class="who-name">Russell Banzon</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div
+                    class="d-flex justify-content-center justify-content-lg-start align-items-center event-sign-up"
+                  >
+                    <a
+                      href="https://content.jbarrows.com/3-selling-secrets-that-will-catapult-your-close-rate"
+                      class="btn btn-black text-nowrap"
+                      target="_blank"
+                      >Sign Up</a
+                    >
+                  </div>
+                </div>
+                <hr class="divider-events d-block d-lg-none" />
+              </div>
+            </div>
+
+            <div class="event-box">
+              <div class="open-icon acc-icon">
+                <a
+                  class="collapsed"
+                  data-bs-toggle="collapse"
+                  href="#event3"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="event3"
+                >
+                  <img
+                    src="https://joinjbsales.com/wp-content/themes/jbsales-ondemand/img/arrow-down.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="row align-items-start">
+                <div class="col-lg-2 d-flex flex-column date-box">
+                  <div class="event-date d-flex align-items-center">
+                    <div class="event-mob d-block d-lg-none">Date</div>
+                    May 26
+                  </div>
+                  <div class="collapse mt-2" id="event3">
+                    <div class="event-date-clock">12:00 pm EST</div>
+                  </div>
+                </div>
+                <div class="col-lg-5 d-flex flex-column title-box">
+                  <div
+                    class="event-title d-flex align-items-start align-items-lg-center"
+                  >
+                    <div class="event-mob d-block d-lg-none">Title</div>
+                    <span class=""
+                      >Top Video Selling Strategies To Boost Stalled Deals</span
+                    >
+                  </div>
+                  <div class="collapse mt-2" id="event3">
+                    <div class="event-describe">
+                      Deals getting stuck at closing? Sometimes all they need is
+                      a little boost.<br />
+                      <br />
+                      This webinar will lay out top video selling strategies
+                      designed to zap your deals out of limbo and over the line.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 d-flex flex-column who-box">
+                  <div
+                    class="event-who d-flex align-items-start align-items-lg-center"
+                  >
+                    <div class="event-mob d-block d-lg-none">Who</div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/01/james-buckley-100x100.jpeg"
+                        alt="James Buckley"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/05/round_headshot_Parker.png"
+                        alt="Parker Beemer"
+                        class="img-fluid"
+                      />
+                    </div>
+
+                    <div class="event-who-img">
+                      <img
+                        src="https://joinjbsales.com/wp-content/uploads/2022/05/round_headshot_Lilah.png"
+                        alt="Lilah Nielsen"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="collapse mt-2" id="event3">
+                    <div class="who-list d-flex flex-column">
+                      <div class="who-name">James Buckley</div>
+
+                      <div class="who-name">Parker Beemer</div>
+
+                      <div class="who-name">Lilah Nielsen</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div
+                    class="d-flex justify-content-center justify-content-lg-start align-items-center event-sign-up"
+                  >
+                    <a
+                      href="https://content.jbarrows.com/top-video-selling-strategies-to-boost-stalled-deals"
+                      class="btn btn-black text-nowrap"
+                      target="_blank"
+                      >Sign Up</a
+                    >
+                  </div>
+                </div>
+                <hr class="divider-events d-block d-lg-none" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center btn-wrap">
+          <a class="btn btn-primary" href="">VIEW ALL PAST EVENTS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join section -->
+
+    <section class="join-section">
+      <div class="container">
+        <h1 class="text-center">
+          Join <br class="b-block d-lg-none" />
+          the fun
+        </h1>
+        <h3 class="text-center">
+          Join 50,000 fellow sales professionals on <br />
+          the journey to get 1% better every day.
+        </h3>
+        <div class="btn-wrap text-center">
+          <a href="#" class="btn btn-primary">Join today</a>
+        </div>
+        <!-- Footer -->
+
+        <div
+          class="footer main-footer d-flex align-items-center justify-content-between"
+        >
+          <div class="footer-logo text-center order-lg-1 order-2">
+            <a href="index.html"
+              ><img src="img/sell_better_logo.svg" alt="" class="img-fluid"
+            /></a>
+          </div>
+          <div class="footer-social-links order-lg-2 order-1">
+            <ul class="list-unstyled d-lg-flex text-center">
+              <li><a href="" class="footer-link">LinkedIn</a></li>
+              <li><a href="" class="footer-link">YouTube</a></li>
+              <li><a href="" class="footer-link">Instagram</a></li>
+              <li><a href="" class="footer-link">TikTok</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+
+    <section class="copyright-section">
+      <div class="container">
+        <div class="copyright-wrap"><p>© 2022 sell better</p></div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
