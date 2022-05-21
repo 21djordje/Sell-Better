@@ -87,7 +87,7 @@
               <div class="navbar-nav ms-auto align-items-center">
                 <ul id="menu-main" class="navbar-nav me-auto mb-2 mb-md-0">
                   <li class="menu-item nav-item">
-                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="#events" class="nav-link">Events</a>
                   </li>
                   <li class="menu-item nav-item">
                     <a href="courses.html" class="nav-link">Courses</a>
@@ -95,7 +95,7 @@
                   <li class="menu-item nav-item">
                     <a href="about.html" class="nav-link">About</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item nav-join">
                     <a
                       class="nav-link"
                       href="#"
@@ -121,7 +121,7 @@
               <ul class="text-center">
                 <li class=""><a class="" href="index.html">Home</a></li>
                 <li class="">
-                  <a class="" href="events.html">Events</a>
+                  <a class="" href="#events">Events</a>
                 </li>
                 <li class="">
                   <a class="" href="courses.html">Courses</a>
@@ -244,7 +244,13 @@
                     </li>
                   </ul>
                   <div class="btn-wrap text-center w-100">
-                    <a href="#" class="btn btn-primary w-100">JOIN FOR FREE </a>
+                    <a
+                      href="#"
+                      class="btn btn-primary w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#joinModal"
+                      >JOIN FOR FREE
+                    </a>
                   </div>
                 </div>
               </div>
@@ -830,7 +836,13 @@
           the journey to get 1% better every day.
         </h3>
         <div class="btn-wrap text-center">
-          <a href="#" class="btn btn-primary">Join today</a>
+          <a
+            href="#"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#joinModal"
+            >Join today</a
+          >
         </div>
         <!-- Footer -->
 
@@ -861,6 +873,88 @@
         <div class="copyright-wrap"><p>© 2022 sell better</p></div>
       </div>
     </section>
+
+    <!-- Join Modal -->
+    <div
+      class="modal fade"
+      id="joinModal"
+      tabindex="-1"
+      aria-labelledby="joinModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 pe-lg-5">
+                  <h1>Keep up with the latest events, offers and more.</h1>
+                  <h5>
+                    Sign-up here to get weekly emails and updates on all our
+                    happenings.
+                  </h5>
+                </div>
+                <div class="col-lg-5">
+                  <form>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="joinFirstName"
+                      placeholder="First Name"
+                    />
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="joinLastName"
+                      placeholder="Last Name"
+                    />
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="joinEmail"
+                      placeholder="Email"
+                    />
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="joinCompany"
+                      placeholder="Company"
+                    />
+                  </form>
+                  <div class="btn-wrap">
+                    <a href="#" class="btn btn-primary w-100">Sign up</a>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="joinCheck"
+                    />
+                    <label class="form-check-label" for="joinCheck"
+                      >By submitting this form, you agree to have your contact
+                      information, including email, passed on to the sponsors of
+                      this webinar for the purpose of following up on your
+                      interests subject to our Privacy Policy.</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"

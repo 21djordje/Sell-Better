@@ -40,9 +40,11 @@ h1 {
 }
 
 .btn-primary:hover,
-.btn-primary:active {
+.btn-primary:active,
+.btn-primary:focus {
   background-color: #b9d50d;
   border: none;
+  box-shadow: none;
 }
 
 /*******************************************
@@ -143,12 +145,6 @@ h1 {
 
 .navbar-nav > li > a.active {
   color: var(--green-light) !important;
-}
-
-.navbar-nav li a.btn {
-  font-size: 19px;
-  line-height: 1.15px;
-  padding: 12px 23px;
 }
 
 .navbar-toggler {
@@ -310,6 +306,20 @@ h1 {
   font-size: 24px;
   line-height: 1.5;
   padding: 10px 110px;
+}
+
+#menu-main .nav-join a:hover {
+  transform: none;
+  color: #000000;
+}
+
+#menu-main .nav-join a {
+  padding-left: 23px;
+  padding-right: 23px;
+  background-color: var(--green-light);
+}
+#menu-main .nav-join a:hover {
+  background-color: #b9d50d;
 }
 
 /*******************************************
@@ -772,6 +782,109 @@ h1 {
 }
 
 /*******************************************
+             Modal
+*******************************************/
+
+#joinModal .modal-content {
+  padding-bottom: 100px;
+  border-radius: 4px;
+  border: 1px solid #c7c7c7;
+}
+
+.modal-header {
+  border-bottom: none;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.modal-header .btn-close {
+  background: url(img/close_icon.svg);
+  opacity: 1;
+  position: absolute;
+  top: 45px;
+  right: 45px;
+}
+
+.modal-header .btn-close:focus {
+  box-shadow: none;
+}
+
+.modal-body h1 {
+  font-size: 74px;
+  font-family: var(--font-secondary);
+  letter-spacing: -1.11px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.modal-body h5 {
+  font-size: 24px;
+  line-height: 1.25;
+  color: #000000;
+}
+
+.modal .form-control {
+  padding: 17px 28px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  color: var(--blue-primary);
+  border: 1px solid #c7c7c7;
+  font-family: var(--font-secondary);
+}
+
+.modal .form-control::placeholder {
+  font-size: 14px;
+  color: #909090;
+  line-height: 1.28;
+  letter-spacing: -0.21px;
+}
+
+.modal .form-control:focus {
+  box-shadow: none;
+  border: 2px solid var(--blue-primary);
+}
+
+.modal .form-control:focus::placeholder {
+  color: var(--blue-primary);
+}
+
+.modal .btn-wrap .btn {
+  color: #000000;
+  font-size: 17px;
+  line-height: 2.33;
+  letter-spacing: -0.17px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.modal .form-check {
+  margin-top: 20px;
+}
+
+.modal .form-check label {
+  color: #4f4f4f;
+  font-size: 13px;
+  line-height: 1.23;
+  margin-left: 10px;
+}
+
+.modal .form-check-input {
+  border-radius: 3px;
+  border: 1px solid #909090;
+  width: 20px;
+  height: 20px;
+}
+
+.modal .form-check-input:active,
+.modal .form-check-input:focus,
+.modal .form-check-input:checked {
+  background-color: var(--blue-primary);
+  border: 1px solid var(--blue-primary);
+  box-shadow: none;
+}
+
+/*******************************************
              Responsive
 *******************************************/
 @media (max-width: 1399px) {
@@ -847,6 +960,24 @@ h1 {
   }
   #events h4 {
     font-size: 28px;
+  }
+  .modal-dialog {
+    max-width: 900px;
+  }
+  .modal-content {
+    padding-bottom: 40px !important;
+  }
+  .modal h1 {
+    font-size: 64px;
+  }
+  .modal-body h5 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+    width: 1111px;
   }
 }
 
@@ -1013,6 +1144,9 @@ h1 {
     line-height: 1.66;
     padding: 24px 70px;
   }
+  .modal-dialog {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1152,6 +1286,12 @@ h1 {
   }
   .copyright-section p {
     margin-bottom: 0px;
+  }
+  .modal h1 {
+    font-size: 50px;
+  }
+  .modal h5 {
+    font-size: 21px;
   }
 }
 
