@@ -308,7 +308,8 @@ h1 {
   padding: 10px 110px;
 }
 
-#menu-main .nav-join a:hover {
+#menu-main .nav-join a:hover,
+#menu-main .nav-join a:focus {
   transform: none;
   color: #000000;
 }
