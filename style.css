@@ -51,7 +51,7 @@ h1 {
 
 .hero-desktop {
   height: 100vh;
-  background-color: var(--blue-primary);
+
   position: relative;
 }
 
@@ -60,6 +60,42 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   bottom: 40px;
+}
+
+.color-scheme-1 {
+  background-color: #4f2ee8;
+}
+
+.color-scheme-1 .hero-section-content img {
+  filter: invert(89%) sepia(50%) saturate(621%) hue-rotate(13deg)
+    brightness(107%) contrast(91%);
+}
+
+.color-scheme-2 {
+  background-color: #17243f;
+}
+
+.color-scheme-2 .hero-section-content img {
+  filter: invert(79%) sepia(10%) saturate(1049%) hue-rotate(216deg)
+    brightness(98%) contrast(93%);
+}
+
+.color-scheme-3 {
+  background-color: #3a3ee4;
+}
+
+.color-scheme-3 .hero-section-content img {
+  filter: invert(75%) sepia(13%) saturate(1631%) hue-rotate(77deg)
+    brightness(93%) contrast(89%);
+}
+
+.color-scheme-4 {
+  background-color: #d0bcf1;
+}
+
+.color-scheme-4 .hero-section-content img {
+  filter: invert(39%) sepia(55%) saturate(852%) hue-rotate(316deg)
+    brightness(101%) contrast(89%);
 }
 
 /*******************************************
