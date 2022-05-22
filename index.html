@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SellBetter</title>
+    <title>Sell Better</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -90,7 +90,7 @@
                     <a href="#events" class="nav-link">Events</a>
                   </li>
                   <li class="menu-item nav-item">
-                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="#" class="nav-link">Courses</a>
                   </li>
                   <li class="menu-item nav-item">
                     <a href="about.html" class="nav-link">About</a>
@@ -111,23 +111,25 @@
         </nav>
 
         <!-- Menu Items -->
-        <div class="slide-menu">
+        <div class="slide-menu" id="slide-menu">
           <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
-          <div class="menu-wrap">
+          <div class="menu-wrap" id="menu-wrap">
             <label for="slide-menu-right" class="menu-close"
               ><img src="img/close_icon.svg" alt=""
             /></label>
             <div class="menu-list">
               <ul class="text-center">
-                <li class=""><a class="" href="index.html">Home</a></li>
                 <li class="">
-                  <a class="" href="#events">Events</a>
+                  <a class="mobile-menu-link" href="index.html">Home</a>
                 </li>
                 <li class="">
-                  <a class="" href="courses.html">Courses</a>
+                  <a class="mobile-menu-link" href="#events">Events</a>
                 </li>
                 <li class="">
-                  <a class="" href="about.html">About</a>
+                  <a class="mobile-menu-link" href="#">Courses</a>
+                </li>
+                <li class="">
+                  <a class="mobile-menu-link" href="about.html">About</a>
                 </li>
               </ul>
               <div class="nav-join text-center w-100">
@@ -315,8 +317,8 @@
             </h1>
           </div>
           <div class="second-section-text second-section-wrap ps-lg-5">
-            <h3 class="mb-0">Your favorite sales voices on speedial.</h3>
-            <p class="mb-0">
+            <h3>Your favorite sales voices on speedial.</h3>
+            <p>
               Get open-door access to top sales trainers and industry experts
               with monthly AMAs, quarterly interactive challenges, and regular
               in-person events.
@@ -331,10 +333,8 @@
             </h1>
           </div>
           <div class="second-section-text second-section-wrap ps-lg-5">
-            <h3 class="mb-0">
-              Learn together, grow together, better together.
-            </h3>
-            <p class="mb-0">
+            <h3>Learn together, grow together, better together.</h3>
+            <p>
               Join a diverse and inclusive community of sales pros ready to
               share ideas, swap stories, challenge conventional wisdom, and
               deliver a dose of inspiration when you need it most.
@@ -351,8 +351,8 @@
             </h1>
           </div>
           <div class="second-section-text second-section-wrap ps-lg-5">
-            <h3 class="mb-0">Unlock a roster of actionable content.</h3>
-            <p class="mb-0">
+            <h3>Unlock a roster of actionable content.</h3>
+            <p>
               Get your front-row ticket to the events and experiences that go
               beyond tips and tricks and explore what it means to work on your
               craft. Plus, get access to all past events.
@@ -895,14 +895,14 @@
           <div class="modal-body pt-0">
             <div class="container">
               <div class="row">
-                <div class="col-lg-6 pe-lg-5">
+                <div class="col-lg-6">
                   <h1>Keep up with the latest events, offers and more.</h1>
                   <h5>
                     Sign-up here to get weekly emails and updates on all our
                     happenings.
                   </h5>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                   <form>
                     <input
                       type="text"
