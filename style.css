@@ -1529,3 +1529,7 @@ h6 {
     height: 40px;
   }
 }
+
+#navbarMain {
+  height: 65px;
+}
